@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ROOT */
+
+:root {
+
+    /* COLORS */
+    --white: #fff;
+    --black: #000;
+    --primary-color: #000000;
+    --secondary-color: #c6d5ac;
+    --headings: #c6d5ac;
+    --bg-main: #3e4560;
+
+
+    /* FONT SIZES */
+    --font-size-s: 0.875rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.125rem;
+    --font-size-l: 2.25rem;
+    --font-size-xl: 3.635rem;
+    --font-size-xxl: 4.24rem;
+  
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+ 
+    /* BORDER RADIUS */
+    --border-radius-s: 8px;
+    --border-radius-m: 20px;
+    --border-radius-l: 32px;
+    --border-radius-circle: 50%;
+
+    /* SITE MAX WIDTH */
+    --site-max-width: 1200px;
+    
+}
+
+/* UPLOADED GOOGLE FONTS */
+
+@font-face {
+    font-family: "Montserrat Regular", sans-serif;
+    src: url("../Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Medium", sans-serif;
+    src: url("../Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Semi-bold", sans-serif;
+    src: url("../Montserrat-SemiBold.ttf");
+}
+
+
+/* BODY STYLING */
+body{
+    font-size: 100%;
+       font-family: "Montserrat Regular", sans-serif;
+       background-color: var(--bg-main);
+       color: var(--white);
+}
+
+/* MAIN CONTAINER STYLING */
+
+.container {
+    padding: 0 10px;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+    color: var(--headings)
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+input[type="text"]{
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.box {
+    height: 100px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin-bottom: 25px;
+}
+
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toggle-text {
+    font-size: 18px;
+}
+
+.toggle-btn {
+    height: 40px;
+    width: 70px;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0 10px;
+    
+}
+
+.inner-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle {
+    transform: translateX(30px);
+    background-color: #333;
+}
+
+.unselected {
+    opacity: 0.25;
+}
