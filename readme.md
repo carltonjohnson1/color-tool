@@ -1,4 +1,4 @@
-# Colo
+# Colour Tool
 
 ### Desktop
 
