@@ -2,7 +2,7 @@
 
 ### Desktop
 
-![screenshot to come](./images/preview.jpg)
+![screenshot](preview.jpg)
 
 ## Content
 
